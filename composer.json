@@ -1,0 +1,35 @@
+{
+  "name"              : "valkyrja/frankenphp",
+  "type"              : "library",
+  "description"       : "FrankenPHP persistent worker entry point for the Valkyrja Framework.",
+  "homepage"          : "https://www.valkyrja.io",
+  "keywords"          : [
+    "framework",
+    "valkyrja",
+    "frankenphp",
+    "worker"
+  ],
+  "license"           : "MIT",
+  "authors"           : [
+    {
+      "name"  : "Melech Mizrachi",
+      "email" : "melechmizrachi@gmail.com"
+    }
+  ],
+  "require"           : {
+    "php"               : ">=8.4",
+    "valkyrja/valkyrja" : "^26.1.0"
+  },
+  "autoload"          : {
+    "psr-4" : {
+      "Valkyrja\\FrankenPhp\\" : "src/Valkyrja/FrankenPhp"
+    }
+  },
+  "minimum-stability" : "dev",
+  "prefer-stable"     : true,
+  "extra"             : {
+    "branch-alias" : {
+      "dev-master" : "26.x-dev"
+    }
+  }
+}
