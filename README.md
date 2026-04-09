@@ -1,6 +1,18 @@
-# valkyrja/frankenphp
+<p align="center"><a href="https://valkyrja.io" target="_blank">
+    <img src="https://raw.githubusercontent.com/valkyrjaio/art/refs/heads/master/full-logo/orange/php.png" width="400">
+</a></p>
+
+# Valkyrja FrankenPHP
 
 FrankenPHP persistent worker entry point for the [Valkyrja Framework](https://www.valkyrja.io).
+
+About
+-----
+
+> This repository provides the FrankenPHP persistent worker entry point for the Valkyrja Framework.
+
+Bootstraps the application once at startup, then dispatches every incoming request to an
+isolated child container — so request state never bleeds between requests.
 
 ## Installation
 
@@ -8,12 +20,11 @@ FrankenPHP persistent worker entry point for the [Valkyrja Framework](https://ww
 composer require valkyrja/frankenphp
 ```
 
-Requires [FrankenPHP](https://frankenphp.dev) running in worker mode.
+Requires [FrankenPHP](https://frankenphp.dev/docs/worker/) running in worker mode.
 
 ## Usage
 
 ```php
-// app/public/index.php
 use Valkyrja\Application\Data\HttpConfig;
 use Valkyrja\FrankenPhp\FrankenPhpHttp;
 
@@ -23,8 +34,8 @@ FrankenPhpHttp::run(new HttpConfig(
 ```
 
 `run()` bootstraps the application once when the worker process starts, then
-enters the FrankenPHP request loop. Each request is handled in an isolated
-child container so state never bleeds between requests.
+enters the FrankenPHP request loop. Each request is handled in an isolated child
+container so state never bleeds between requests.
 
 ## Customising Bootstrap
 
@@ -36,7 +47,7 @@ use Valkyrja\Application\Kernel\Contract\ApplicationContract;
 use Valkyrja\FrankenPhp\FrankenPhpHttp;
 use Valkyrja\Http\Routing\Collection\Contract\CollectionContract;
 
-class MyFrankenPhpHttp extends FrankenPhpHttp
+class App extends FrankenPhpHttp
 {
     protected static function bootstrapParentServices(ApplicationContract $app): void
     {
@@ -49,7 +60,7 @@ class MyFrankenPhpHttp extends FrankenPhpHttp
 
 ## Worker Lifecycle
 
-See the [Valkyrja Application README](https://github.com/valkyrja/valkyrja) for
+See the [Valkyrja Framework README](https://github.com/valkyrjaio/valkyrja) for
 a full explanation of the persistent worker lifecycle, the child container
 isolation model, and configuration options.
 
