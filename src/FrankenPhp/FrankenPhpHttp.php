@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the Valkyrja FrankenPHP package.
+ * This file is part of the Valkyrja Framework package.
  *
  * (c) Melech Mizrachi <melechmizrachi@gmail.com>
  *
@@ -44,6 +44,7 @@ class FrankenPhpHttp extends WorkerHttp
             }
         };
 
+        // @phpstan-ignore-next-line
         $maxRequests = (int) ($_SERVER['MAX_REQUESTS'] ?? 0);
 
         for ($nbRequests = 0; !$maxRequests || $nbRequests < $maxRequests; $nbRequests++) {
