@@ -22,7 +22,12 @@
   },
   "autoload"          : {
     "psr-4" : {
-      "Valkyrja\\FrankenPhp\\" : "src/Valkyrja/FrankenPhp"
+      "Valkyrja\\FrankenPhp\\" : "src/FrankenPhp"
+    }
+  },
+  "autoload-dev"      : {
+    "psr-4" : {
+      "Valkyrja\\FrankenPhp\\Tests\\" : "tests/Tests"
     }
   },
   "minimum-stability" : "dev",
