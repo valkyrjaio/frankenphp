@@ -1,6 +1,10 @@
 # Release Notes for 26.x
 
-## [Unreleased](https://github.com/valkyrjaio/valkyrja/compare/v26.0.1...26.x)
+## [Unreleased](https://github.com/valkyrjaio/valkyrja/compare/v26.0.2...26.x)
+
+## [v26.0.2](https://github.com/valkyrjaio/valkyrja/compare/v26.0.1...v26.0.2) - 2026-04-16
+
+* [CI] Update psalm and phpstan dependencies by [@MelechMizrachi](https://github.com/MelechMizrachi) in https://github.com/valkyrjaio/frankenphp/pull/13
 
 ## [v26.0.1](https://github.com/valkyrjaio/valkyrja/compare/v1.0.0...v26.0.1) - 2026-04-16
 
