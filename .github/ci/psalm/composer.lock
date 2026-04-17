@@ -3324,12 +3324,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja.git",
-                "reference": "3226ee5cd8faae6a7c33e4be7e090929bc23785b"
+                "reference": "48caee0b7ef25b32245cd5cb6e4fea4d29c65c93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja/zipball/3226ee5cd8faae6a7c33e4be7e090929bc23785b",
-                "reference": "3226ee5cd8faae6a7c33e4be7e090929bc23785b",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja/zipball/48caee0b7ef25b32245cd5cb6e4fea4d29c65c93",
+                "reference": "48caee0b7ef25b32245cd5cb6e4fea4d29c65c93",
                 "shasum": ""
             },
             "require": {
@@ -3416,7 +3416,7 @@
                 "issues": "https://github.com/valkyrjaio/valkyrja/issues",
                 "source": "https://github.com/valkyrjaio/valkyrja/tree/26.x"
             },
-            "time": "2026-04-17T00:18:51+00:00"
+            "time": "2026-04-17T01:08:42+00:00"
         },
         {
             "name": "vimeo/psalm",
