@@ -1,6 +1,11 @@
 # Release Notes for 26.x
 
-## [Unreleased](https://github.com/valkyrjaio/valkyrja/compare/v1.0.0...master)
+## [Unreleased](https://github.com/valkyrjaio/valkyrja/compare/v26.0.1...26.x)
+
+## [v26.0.1](https://github.com/valkyrjaio/valkyrja/compare/v1.0.0...v26.0.1) - 2026-04-16
+
+* [Documentation] Update README from master to 26.x badges by [@MelechMizrachi](https://github.com/MelechMizrachi) in https://github.com/valkyrjaio/frankenphp/pull/11
+* [CI] Update CI dependencies by [@MelechMizrachi](https://github.com/MelechMizrachi) in https://github.com/valkyrjaio/frankenphp/pull/12
 
 ## [v1.0.0](https://github.com/valkyrjaio/valkyrja/compare/v26.0.0...v1.0.0) - 2026-04-16
 
